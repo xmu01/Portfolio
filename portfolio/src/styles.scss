@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    font-family: 'Poppins-Regular';
+}
+
+/* Poppins nomal font */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./assets/fonts/Poppins-1/Poppins-Regular.ttf');
+}
+
+/* Poppins bold font */
+@font-face {
+    font-family: 'Poppins-Regular bold';
+    src: url('./assets/fonts/Poppins-1/Poppins-Bold.ttf');
+}
