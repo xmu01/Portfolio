@@ -1,9 +1,33 @@
-* {
+body {
     background-color:  #141d2f;
     margin: 0;
     height: 100vh;
-    background-image: url('./../../assets/Group11.png');
+    background-image: url('./../../assets/purpleshadowmerged.png');
     background-repeat: no-repeat;
-    background-position: 5% 0%;
+    /*background-size: contain; /*Bei Mobilansicht einfach media query size ändern in px*/
+    background-size: cover;
+    background-position: 50% 100%;
     
+}
+.title-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 32px;
+    .rotate-iam {
+        color: white;
+        writing-mode: vertical-lr;transform: rotate(-180deg);
+        font-size: 67px;
+    }
+    
+    .hero-name {
+        color: white;
+        font-family: 'Poppins-Regular bold';
+       
+        .hero-dev {
+            color: #4b47ff;
+        }
+    }
+
 }
