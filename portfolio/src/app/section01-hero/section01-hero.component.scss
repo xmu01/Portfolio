@@ -9,12 +9,18 @@ body {
     background-position: 50% 100%;
     
 }
+
+* {
+    box-sizing: border-box;
+}
+
 .title-hero {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
     font-size: 32px;
+    
     .rotate-iam {
         color: white;
         writing-mode: vertical-lr;transform: rotate(-180deg);
@@ -35,8 +41,8 @@ body {
 .btn-hero {
     display: flex;
     justify-content: center;
-    margin-top: -160px;
-    
+    margin-top: -140px;
+     
 .btn-talk {
     color: white;
     background-color: #01b8e2;
@@ -67,6 +73,8 @@ body {
         margin-top: 20vh;
     }
     .hero-icons {
+        
+        
         img {
             margin-bottom: -2vh;
             margin-left: 5vh;
@@ -97,7 +105,7 @@ body {
     .title-hero {
         font-size: 15px;
         .rotate-iam {
-            font-size: 55px;
+            font-size: 30px;
         }
     }
 
