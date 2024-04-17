@@ -10,6 +10,8 @@ import { Section04PortfolioComponent } from './section04-portfolio/section04-por
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
