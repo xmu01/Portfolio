@@ -16,3 +16,15 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mdc-dialog__surface {
+    background: gray !important;
+  }
+
+.cdk-overlay-backdrop-showing {
+    background: gray;
+}
+
+.mdc-dialog__container {
+    border: none;
+}

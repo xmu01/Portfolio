@@ -35,21 +35,39 @@ openDialog() {
   selector: 'dialog-elements-example-dialog',
   template: ` 
   <nav>
-  <a href="#">About me</a> <br>
-  <a href="#">Skills</a> <br>
-  <a href="#">Portfolio</a> <br>
+  <a href="#">About me</a> <br> <br><br>
+  <a href="#">Skills</a> <br> <br><br>
+  <a href="#">Portfolio</a> <br> <br><br>
   </nav>`,
   styles: `
+  
+  .mdc-dialog__surface {
+    background: gray;
+  }
+
+.cdk-overlay-backdrop-showing {
+    background: gray;
+}
+
+.mdc-dialog__container {
+    border: none;
+}
+
+  .mat-mdc-dialog-surface mdc-dialog_surface {
+    background-color: transparent;
+  }
+
   body {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0,0,0,1);
+    
   }
   nav {
-    background-color: transparent;
-    background: rgba(0,0,0,1);
+    
+    padding-top: 10px;
+    
     a {
-      background-color: transparent;
+      padding: 20px;
       color: white;
       text-decoration: none;
       font-size: 32px;
@@ -62,10 +80,4 @@ openDialog() {
 })
 export class DialogElementsExampleDialog {}
 
-/*openMenu = () => {
-  const dialogConfig = new MatDialogConfig();
-  dialogConfig.width = '800px';
-  dialogConfig.height = '100vh';
-  dialogConfig.backdropClass = 'popupBackdropClass';
-  this.dialog.open(UserFormComponent, dialogConfig);
-}*/ 
+
