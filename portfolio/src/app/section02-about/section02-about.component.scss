@@ -1,0 +1,59 @@
+body {
+    color: white;
+    background-color:  #141d2f;
+    margin: 0;
+    height: 100vh;
+    
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0 auto; /* Das für p war nur ein Test. Kannst du später entfernen.*/
+    max-width: 1440px;
+}
+
+.left-div-02 {
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-left: 8vh; /*Eventuell hier später daran arbeiten*/
+    margin-right: 2vh;
+
+    h1 {
+        font-size: 64px;
+        
+    }
+
+    .description {
+        margin-top: 5vh;
+
+        .description-part1 {
+            display: flex;
+            margin-top: 5vh;
+
+            .bulb-png {
+                margin-right: 5vh;
+                height: 60px;
+                width: 60px;
+                object-fit: none;
+            }
+        }
+        
+        .description-part2 {
+            display: flex;
+            margin-top: 5vh;
+
+            .puzzle-png {
+                margin-right: 5vh;
+                height: 60px;
+                width: 60px;
+                object-fit: none;
+            }
+        }
+
+
+    }
+}
