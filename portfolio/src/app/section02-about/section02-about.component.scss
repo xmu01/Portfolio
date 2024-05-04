@@ -2,13 +2,13 @@ body {
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    height: 100vh;
+    height: 130vh;
     
 }
 
 * {
     box-sizing: border-box;
-    overflow-x: hidden;
+    
 }
 
 p {
@@ -29,31 +29,79 @@ p {
 
     .description {
         margin-top: 5vh;
+        /*width: 50%; /*Muss gucken ob das so bleiben soll*/
 
         .description-part1 {
             display: flex;
             margin-top: 5vh;
 
+            .img-container {
+
+            width: 61px;
+            margin-right: 5vh;
             .bulb-png {
-                margin-right: 5vh;
+                
                 height: 60px;
                 width: 60px;
                 object-fit: none;
             }
+          }
         }
         
         .description-part2 {
             display: flex;
             margin-top: 5vh;
 
-            .puzzle-png {
+
+            .img-container2 {
+                width: 61px;
                 margin-right: 5vh;
-                height: 60px;
-                width: 60px;
-                object-fit: none;
+                .puzzle-png {
+                    
+                    height: 60px;
+                    width: 60px;
+                    object-fit: none;
+                }
             }
+            
         }
 
+
+    }
+}
+
+.right-div-02 {
+    
+    .bg-pfp {
+
+        .bg-pfp-img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .vector {
+        overflow-y: hidden;
+        .vector-img {
+            object-fit:fill;
+            width: 100%;
+            height: 30vh;
+            
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: 110vh; /* Später musst schauen wie hoch max-width und height sein sollen, dann richtig anpasssen bzw. woanders platzieren den body*/
+    }
+
+
+    .left-div-02 {
+        h1 {
+            font-size: 30px;
+        }
 
     }
 }
