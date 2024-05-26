@@ -1,0 +1,49 @@
+body {
+    color: white;
+    background-color:  #141d2f;
+    margin: 0;
+    height: 140vh;
+
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+p {
+    margin: 0 auto; /* Das für p war nur ein Test. Kannst du später entfernen.*/
+    max-width: 1440px;
+}
+
+.top-04 {
+
+    .headline {
+       display: flex;
+       align-items: center;
+
+        .portfolio-line {
+            height: 4px;
+            color: #01b8e2;
+            background-color: #01b8e2;
+            width: 5vh; /*Vorher 400px*/
+            /*margin-top: 20vh;*/
+            margin-right: 20px; /* Abstand zwischen h1 und Linie */
+            position: absolute; /*NEU und..*/
+            left: 0; /*....NEU*/
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-left: 8vh;
+            max-width: 1440px;
+        }
+    }
+
+    p {
+        max-width: 1440px;
+        margin-left: 8vh;
+        margin-right: 8vh;
+    }
+}

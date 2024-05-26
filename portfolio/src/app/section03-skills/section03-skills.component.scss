@@ -2,8 +2,18 @@ body {
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    height: 130vh;
+    height: 100vh; /*130vh*/
     display: flex;
+    
+    justify-content: center; /*Eventuell die beiden später entfernen*/
+    align-items: center;
+
+    /*background-image: url('./../../assets/green_skill_shadow.png');*/
+    background-position: -100% -200%; /* Ursprünglicher Wert: 0% -60%*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
 }
 
 * {
@@ -20,8 +30,8 @@ p {
     margin: 0 auto;
     max-width: 1440px;
     margin-left: 8vh; /*Eventuell hier später daran arbeiten*/
-    margin-right: 2vh;
-    width: 60%; /*Testen*/
+    margin-right: 6vh; /*Ursprünglich 2vh*/
+    width: 50%; /*Testen*/
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -36,7 +46,19 @@ p {
             .left-03-img {
                 width: 50px;
                 height: 50px;
-        
+
+                margin-top: 20px;
+                
+                animation-duration: 2s;
+                animation-iteration-count: 1; /*instead of infinite*/
+                transform-origin: bottom;
+
+                
+            }
+
+            .left-03-img:hover {
+                animation-name: bounce;
+                animation-timing-function: ease;
             }
         }
 
@@ -45,16 +67,28 @@ p {
     
 }
 
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
 .right-div-03 {
     /*width: 50%;/* Brauche ich denke ich nicht*/
    display: flex;
+
+   flex-direction: column; /*1 das und ..*/
+    align-items: flex-start; /* H1 und Button linksbündig */
+    position: relative;
+    width:60%; /*...bis das später weg*/
     
     .headline-line {
-        
+        display: flex;
         
         h1 {
-            font-size: 64px;
-            margin-bottom: 0vh;
+            font-size: 75px;
+            margin-bottom: 20px; /*vorher 0vh*/
+            margin-top: -50px;
          
         }
         .line-skills {
@@ -62,16 +96,19 @@ p {
             height: 4px;
             color: #01b8e2;
             background-color: #01b8e2;
-            width: 100px;
-            margin-top: 20vh;
+            width: 30vh; /*Vorher 400px*/
+            /*margin-top: 20vh;*/
+            margin-left: 20px; /* Abstand zwischen h1 und Linie */
+            position: absolute; /*NEU und..*/
+            right: 0; /*....NEU*/
 
         }
     }
 
     .btn-skills {
         /*display: flex;
-        justify-content: center;*/
-        margin-top: -190px; /*Eventuell anpassen gleich*/
+        justify-content: flex-end;*/
+        margin-top: 20px; /*Eventuell anpassen gleich (vorher -190px)*/
          
         .btn-touch {
             color: white;
@@ -87,6 +124,83 @@ p {
             background-color: #4b47ff;
             transform: scale(1.2) perspective(1px);
             font-size: 19px;
+        }
+    }
+
+
+    .green-img-div {
+        .green-img {
+            height: 400px;
+            width: 400px;
+            margin-bottom: -50vh;
+            position:absolute;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .right-div-03 {
+        .headline-line {
+            .line-skills {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) { 
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .left-div-03 {
+        width: 100%;
+    }
+
+    .right-div-03 {
+        
+
+        .headline-line {
+
+            h1 {
+                margin-top: 5vh; /*Damit Skills bissl tiefer ist als die Blueline*/
+                font-size: 50px;
+            }
+            
+            .line-skills {
+                position: absolute;
+                right: 0;
+            }
+
+        }
+
+        .btn-skills {
+            padding-bottom: 10vh;
+        }
+    }
+
+} 
+
+@media (max-width: 500px) {
+
+    .left-div-03 {
+
+        .first-row {
+
+            .img-text {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                font-size: 12px; /*statt 16px*/
+                .left-03-img {
+                    width: 40px;
+                    height: 40px;
+            
+                }
+            }
+    
         }
     }
 }
