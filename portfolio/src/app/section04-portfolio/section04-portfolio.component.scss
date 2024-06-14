@@ -3,7 +3,10 @@ body {
     background-color:  #141d2f;
     margin: 0;
     height: 140vh;
-
+    background-image: url('./../../assets/blueshadow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     overflow-x: hidden;
 }
 
@@ -26,7 +29,7 @@ p {
         .portfolio-line {
             height: 4px;
             color: #01b8e2;
-            background-color: #01b8e2;
+            background-color: #4b47ff;
             width: 5vh; /*Vorher 400px*/
             /*margin-top: 20vh;*/
             margin-right: 20px; /* Abstand zwischen h1 und Linie */
@@ -69,6 +72,7 @@ p {
         border-width: 0.2px;
         border-radius: 15px;
         position: relative; /* Hinzugefügt */
+        background-color:  #141d2f;
 
 
         .buttons {
@@ -180,6 +184,7 @@ p {
         border-width: 0.2px;
         border-radius: 15px;
         position: relative; /* Hinzugefügt */
+        background-color:  #141d2f;
 
         .buttons {
             z-index: 999;
