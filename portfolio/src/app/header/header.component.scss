@@ -19,6 +19,8 @@ header {
    background-color:  #141d2f;
    color: white;
    padding:32px;
+   padding-right: 4vh;
+   padding-left: 4vh;
    /*padding-left: 120px;
    padding-right: 120px;
    display: flex;
@@ -55,17 +57,19 @@ header {
 
    .burger-menu {
         display: none;
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
    }
 }
 }
 
 @media (max-width: 800px) {
     header {
+        padding-left: 1vh;
+        padding-right: 1vh;
     .header-content {
-        padding-left: 10px;
-        padding-right: 10px;
+        /*padding-left: 10px;
+        padding-right: 10px;*/
         display: flex;
         justify-content:space-around;
         nav {

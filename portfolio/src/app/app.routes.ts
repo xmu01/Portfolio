@@ -8,12 +8,12 @@ import { Section05ContactComponent } from './section05-contact/section05-contact
 import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
-    { path: '', component: HeaderComponent },
-    { path: '', component: Section01HeroComponent },
-    { path: '', component: Section02AboutComponent },
-    { path: '', component: Section03SkillsComponent },
-    { path: '', component: Section04PortfolioComponent },
-    { path: '', component: Section05ContactComponent },
-    { path: '', component: FooterComponent },
+    { path: 'header', component: HeaderComponent },
+    { path: 'hero', component: Section01HeroComponent },
+    { path: 'about', component: Section02AboutComponent },
+    { path: 'skills', component: Section03SkillsComponent },
+    { path: 'portfolio', component: Section04PortfolioComponent },
+    { path: 'contact', component: Section05ContactComponent },
+    { path: 'footer', component: FooterComponent },
 
 ];
