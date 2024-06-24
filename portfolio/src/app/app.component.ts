@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, Event, NavigationEnd } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
+
 import { CommonModule } from '@angular/common';
 //import { RouterOutlet } from '@angular/router'; // Ich glaube,lösche ich am Ende, damit ich die Components nicht 2 mal einbinde. Ich habe schon <app-router> in app.component.html gelöscht. Falls ich es wieder einfügen möchte, in imports auch gucken..
 
@@ -25,23 +24,8 @@ import { FooterComponent } from './footer/footer.component';
 export class AppComponent {
   title = 'portfolio';
 
-  constructor(private router: Router, private viewportScroller: ViewportScroller) {
-    this.router.events.subscribe((event: Event) => {
-      if (event instanceof NavigationEnd) {
-        const fragment = this.router.url.split('#')[1];
-        if (fragment) {
-          setTimeout(() => {
-            this.viewportScroller.scrollToAnchor(fragment);
-          }, 100);
-        }
-      }
-    });
-  }
+  constructor() { }
 
-  scrollTo(section: string) {
-    this.router.navigateByUrl('/' + section).then(() => {
-      this.viewportScroller.scrollToAnchor(section);
-    });
-  }
+
 
 }

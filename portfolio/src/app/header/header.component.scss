@@ -31,15 +31,20 @@ header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-   h3 {
-    font-size: 36px;
-    font-family: 'Poppins-Regular bold';
-    cursor: pointer;
-        .last-letter {
-            color: #53bfe9;
+    a {
+        text-decoration: none;
+        color: white;
+    
+        h3 {
+            font-size: 36px;
             font-family: 'Poppins-Regular bold';
+            cursor: pointer;
+                .last-letter {
+                    color: #53bfe9;
+                    font-family: 'Poppins-Regular bold';
+                }
         }
-   }
+    }
    nav {
     
         a {

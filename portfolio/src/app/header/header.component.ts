@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
+
 //import { MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 
 import {
@@ -25,17 +24,12 @@ import {MatButtonModule} from '@angular/material/button';
 export class HeaderComponent {
 
 
-constructor(private router: Router, private viewportScroller: ViewportScroller, public dialog: MatDialog) { }
+constructor(public dialog: MatDialog) { }
 
 openDialog() {
   this.dialog.open(DialogElementsExampleDialog);
 }
 
-scrollTo(section: string) {
-  this.router.navigateByUrl('/' + section).then(() => {
-    this.viewportScroller.scrollToAnchor(section);
-  });
-}
 
 }
 
@@ -44,9 +38,9 @@ scrollTo(section: string) {
   selector: 'dialog-elements-example-dialog',
   template: ` 
   <nav>
-  <a (click)="scrollTo('about')">About me</a> <br> <br><br>
-  <a (click)="scrollTo('skills')">Skills</a> <br> <br><br>
-  <a (click)="scrollTo('portfolio')">Portfolio</a> <br> <br><br>
+  <a href="#about">About me</a> <br> <br><br>
+  <a href="#skills">Skills</a> <br> <br><br>
+  <a href="#skills">Portfolio</a> <br> <br><br>
   </nav>`,
   styles: `
   
