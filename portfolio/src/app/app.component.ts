@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+import { MyServiceService } from './my-service.service'; // Wichtig für Übersetzung in jede Komponente
+
+
+
 import { CommonModule } from '@angular/common';
 //import { RouterOutlet } from '@angular/router'; // Ich glaube,lösche ich am Ende, damit ich die Components nicht 2 mal einbinde. Ich habe schon <app-router> in app.component.html gelöscht. Falls ich es wieder einfügen möchte, in imports auch gucken..
 
@@ -23,9 +27,21 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'portfolio';
+  currentLang: string = 'en'; // Auch zum Übersetzen
 
-  constructor() { }
+  ngOnInit() {
+    this.switchLanguage();
+  }
+
+  switchLanguage() {
+    this.translationService.switchLanguage();
+  }
+
+  constructor(private translationService: MyServiceService) {
+
+    
 
 
 
+  }
 }

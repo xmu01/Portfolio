@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { MyServiceService } from './my-service.service'; // Wichtig für Übersetzung in jede Komponente
+
 //import { MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 
 import {
@@ -23,8 +25,17 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class HeaderComponent {
 
+  lang: string = 'eng'; // Sprache
 
-constructor(public dialog: MatDialog) { }
+  ngOnInit() {
+    this.switchLanguage();
+  }
+
+  switchLanguage() {
+    this.translationService.switchLanguage();
+  }
+
+constructor(public dialog: MatDialog, private translationService: MyServiceService) { }
 
 openDialog() {
   this.dialog.open(DialogElementsExampleDialog);
@@ -40,7 +51,8 @@ openDialog() {
   <nav>
   <a href="#about">About me</a> <br> <br><br>
   <a href="#skills">Skills</a> <br> <br><br>
-  <a href="#skills">Portfolio</a> <br> <br><br>
+  <a href="#portfolio">Portfolio</a> <br> <br><br>
+  <a href="#">Deutsch</a> <br> <br><br>
   </nav>`,
   styles: `
   
