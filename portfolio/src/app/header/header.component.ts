@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { MyServiceService } from './my-service.service'; // Wichtig für Übersetzung in jede Komponente
+import { MyServiceService } from '.././my-service.service'; // Wichtig für Übersetzung in jede Komponente
 
 //import { MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 
@@ -33,9 +33,9 @@ export class HeaderComponent {
 
   switchLanguage() {
     this.translationService.switchLanguage();
-  }
+  } 
 
-constructor(public dialog: MatDialog, private translationService: MyServiceService) { }
+constructor(public dialog: MatDialog, private translationService: MyServiceService) { } 
 
 openDialog() {
   this.dialog.open(DialogElementsExampleDialog);
