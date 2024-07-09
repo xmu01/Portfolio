@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core'; // Zum Übersetzen
 export class MyServiceService {
   currentLang: string = 'en';
 
-  constructor(private translate: TranslateService) { 
+  constructor(public translate: TranslateService) { 
 
 
     // Laden von Übersetzungen direkt im Code

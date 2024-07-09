@@ -37,7 +37,7 @@ export class AppComponent {
     this.translationService.switchLanguage();
   }
 
-  constructor(private translationService: MyServiceService) {
+  constructor(public translationService: MyServiceService) {
 
     
 

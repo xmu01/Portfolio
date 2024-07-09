@@ -35,7 +35,7 @@ export class HeaderComponent {
     this.translationService.switchLanguage();
   } 
 
-constructor(public dialog: MatDialog, private translationService: MyServiceService) { } 
+constructor(public dialog: MatDialog, public translationService: MyServiceService) { } 
 
 openDialog() {
   this.dialog.open(DialogElementsExampleDialog);
