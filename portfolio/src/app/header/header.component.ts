@@ -14,12 +14,14 @@ import {
 } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
