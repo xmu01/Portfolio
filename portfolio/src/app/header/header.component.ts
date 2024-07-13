@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { MyServiceService } from '.././my-service.service'; // Wichtig für Übersetzung in jede Komponente
+import { TranslateModule } from '@ngx-translate/core'; // das asauch zum Übersetzen
 
 //import { MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 
@@ -14,7 +15,7 @@ import {
 } from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 
-import { TranslateModule } from '@ngx-translate/core';
+
 
 
 
@@ -51,10 +52,10 @@ openDialog() {
   selector: 'dialog-elements-example-dialog',
   template: ` 
   <nav>
-  <a href="#about">About me</a> <br> <br><br>
-  <a href="#skills">Skills</a> <br> <br><br>
-  <a href="#portfolio">Portfolio</a> <br> <br><br>
-  <a href="#">Deutsch</a> <br> <br><br>
+  <a href="#about">{{ 'ABOUT' | translate }}</a> <br> <br><br>
+  <a href="#skills">{{ 'SKILLS' | translate }}</a> <br> <br><br>
+  <a href="#portfolio">{{ 'PORTFOLIO' | translate }}</a> <br> <br><br>
+  <a href="#">{{ 'SWITCH_LANGUAGE' | translate }}</a> <br> <br><br>
   </nav>`,
   styles: `
   
@@ -93,7 +94,7 @@ openDialog() {
   
   `,
   standalone: true,
-  imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose, MatButtonModule,],
+  imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose, MatButtonModule, TranslateModule],
 })
 export class DialogElementsExampleDialog {}
 

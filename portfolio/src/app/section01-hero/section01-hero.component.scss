@@ -46,7 +46,7 @@ body {
 .btn-talk {
     color: white;
     background-color: #01b8e2;
-    height: 50px;
+    height: 60px;
     width: 130px;
     border: none;
     border-radius: 8px;
@@ -55,8 +55,8 @@ body {
 .btn-talk:hover {
     cursor: pointer;
     background-color: #4b47ff;
-    transform: scale(1.2) perspective(1px);
-    font-size: 23px;
+    transform: scale(1.4) perspective(1px);
+    font-size: 21px;
 }
 }
 
