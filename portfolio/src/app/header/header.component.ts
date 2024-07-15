@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { MyServiceService } from '.././my-service.service'; // Wichtig für Übersetzung in jede Komponente
-import { TranslateModule } from '@ngx-translate/core'; // das asauch zum Übersetzen
+import { TranslateModule } from '@ngx-translate/core'; // das auch zum Übersetzen
 
 //import { MatDialogModule, MatDialogConfig } from '@angular/material/dialog';
 

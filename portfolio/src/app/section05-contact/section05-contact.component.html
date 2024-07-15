@@ -21,14 +21,14 @@
 
     <div class="right-div-05">
         <div class="forms-div">
-            <form action="">
-                <input class="name-input" type="text" placeholder=" {{ 'CONTACT_05_NAME' | translate }} ">
-                <input class="email-input" type="email" placeholder=" {{ 'CONTACT_05_EMAIL' | translate }} ">
-                <textarea class="message-textarea" type="text" rows="7" placeholder=" {{ 'CONTACT_05_MSG' | translate }} "></textarea>
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <input [(ngModel)]="contactData.name"  [ngModelOptions]="{standalone: true}" class="name-input" type="text" id="name" name="name" required minlength="1" placeholder=" {{ 'CONTACT_05_NAME' | translate }} ">
+                <input [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" class="email-input" type="email" id="email" name="email" required minlength="2" placeholder=" {{ 'CONTACT_05_EMAIL' | translate }} ">
+                <textarea [(ngModel)]="contactData.message" [ngModelOptions]="{standalone: true}" class="message-textarea" type="text" id="message" name="message" rows="7" required minlength="1" placeholder=" {{ 'CONTACT_05_MSG' | translate }} "></textarea>
                 <div class="checker">
-                <input class="checkbox" type="checkbox"> <p>&nbsp; &nbsp;{{ 'CONTACT_05_POLICY' | translate }}</p>
+                <input class="checkbox" type="checkbox" required> <p>&nbsp; &nbsp;{{ 'CONTACT_05_POLICY' | translate }}</p>
                 </div>
-                <button class="send-button">{{ 'CONTACT_05_SEND' | translate }}</button>
+                <button class="send-button" type="submit" value="submit">{{ 'CONTACT_05_SEND' | translate }}</button>
             </form>
             <div class="go-up-div">
                 <a href="#hero"><img class="go-up" src="assets/go_up.png" alt=""></a>
