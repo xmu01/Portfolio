@@ -198,6 +198,11 @@ p {
                 margin-right: 8vh;
             }
 
+            .send-button.valid { /*Wenn man alles ausgefüllt hat, soll der graue Button blau werden*/
+                background-color:#01b8e2;
+                cursor: pointer;
+              }
+
             .go-up-div {
                 display: flex;
                 width: 100%; /* Nimmt die gesamte Breite des Containers ein */

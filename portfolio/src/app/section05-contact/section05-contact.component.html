@@ -21,15 +21,63 @@
 
     <div class="right-div-05">
         <div class="forms-div">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <input [(ngModel)]="contactData.name"  [ngModelOptions]="{standalone: true}" class="name-input" type="text" id="name" name="name" required minlength="1" placeholder=" {{ 'CONTACT_05_NAME' | translate }} ">
+           <!-- <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+                <input [(ngModel)]="contactData.name"  [ngModelOptions]="{standalone: true}" class="name-input" type="text" id="name" name="name" #name="ngModel" required minlength="1" placeholder=" {{ 'CONTACT_05_NAME' | translate }} ">
+                
                 <input [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" class="email-input" type="email" id="email" name="email" required minlength="2" placeholder=" {{ 'CONTACT_05_EMAIL' | translate }} ">
+                
                 <textarea [(ngModel)]="contactData.message" [ngModelOptions]="{standalone: true}" class="message-textarea" type="text" id="message" name="message" rows="7" required minlength="1" placeholder=" {{ 'CONTACT_05_MSG' | translate }} "></textarea>
+                
                 <div class="checker">
                 <input class="checkbox" type="checkbox" required> <p>&nbsp; &nbsp;{{ 'CONTACT_05_POLICY' | translate }}</p>
                 </div>
                 <button class="send-button" type="submit" value="submit">{{ 'CONTACT_05_SEND' | translate }}</button>
-            </form>
+            </form> -->
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+                <input [(ngModel)]="contactData.name" class="name-input" type="text" id="name" name="name" #name="ngModel" required minlength="1" placeholder="{{ 'CONTACT_05_NAME' | translate }}">
+                <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+                  <div *ngIf="name.errors?.['required']" style="color: red; margin-top: -4vh;">
+                    Name is required.
+                  </div>
+                  <div *ngIf="name.errors?.['minlength']" style="color: red; margin-top: -4vh;">
+                    Name must be at least 1 character long.
+                  </div>
+                </div>
+              
+                <input [(ngModel)]="contactData.email" class="email-input" type="email" id="email" name="email" #email="ngModel" required minlength="2" placeholder="{{ 'CONTACT_05_EMAIL' | translate }}">
+                <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+                  <div *ngIf="email.errors?.['required']" style="color: red; margin-top: -4vh;">
+                    Email is required.
+                  </div>
+                  <div *ngIf="email.errors?.['minlength']" style="color: red; margin-top: -4vh;">
+                    Email must be at least 2 characters long.
+                  </div>
+                  <div *ngIf="email.errors?.['email']" style="color: red; margin-top: -4vh;">
+                    Invalid email format.
+                  </div>
+                </div>
+              
+                <textarea [(ngModel)]="contactData.message" class="message-textarea" id="message" name="message" rows="7" #message="ngModel" required minlength="1" placeholder="{{ 'CONTACT_05_MSG' | translate }}"></textarea>
+                <div *ngIf="message.invalid && (message.dirty || message.touched)" class="error" >
+                  <div *ngIf="message.errors?.['required']" style="color: red; margin-top: -4vh;">
+                    Message is required.
+                  </div>
+                  <div *ngIf="message.errors?.['minlength']" style="color: red; margin-top: -4vh;">
+                    Message must be at least 1 character long.
+                  </div>
+                </div>
+              
+                <div class="checker">
+                  <input class="checkbox" type="checkbox" id="policy" name="policy" #policy="ngModel" ngModel required> 
+                  <p>&nbsp; &nbsp;{{ 'CONTACT_05_POLICY' | translate }}</p>
+                  <div *ngIf="policy.invalid && (policy.dirty || policy.touched)" class="error" style="color: red; margin-top: -4vh;">
+                    You must agree to the policy.
+                  </div>
+                </div>
+              
+                <button class="send-button" type="submit" [disabled]="contactForm.invalid" [class.valid]="contactForm.valid">{{ 'CONTACT_05_SEND' | translate }}</button>
+              </form>
+
             <div class="go-up-div">
                 <a href="#hero"><img class="go-up" src="assets/go_up.png" alt=""></a>
             </div>
