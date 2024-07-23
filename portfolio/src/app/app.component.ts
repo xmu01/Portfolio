@@ -14,6 +14,7 @@ import { Section03SkillsComponent } from './section03-skills/section03-skills.co
 import { Section04PortfolioComponent } from './section04-portfolio/section04-portfolio.component';
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImpressComponent } from './impress/impress.component';
 
 
 
@@ -21,7 +22,7 @@ import { FooterComponent } from './footer/footer.component';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule,
-  HeaderComponent,Section01HeroComponent, Section02AboutComponent, Section03SkillsComponent, Section04PortfolioComponent, Section05ContactComponent, FooterComponent, ],
+  HeaderComponent,Section01HeroComponent, Section02AboutComponent, Section03SkillsComponent, Section04PortfolioComponent, Section05ContactComponent, FooterComponent, ImpressComponent, ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

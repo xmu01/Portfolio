@@ -6,6 +6,7 @@ import { Section03SkillsComponent } from './section03-skills/section03-skills.co
 import { Section04PortfolioComponent } from './section04-portfolio/section04-portfolio.component';
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImpressComponent } from './impress/impress.component';
 
 
 
@@ -17,5 +18,6 @@ export const routes: Routes = [
     { path: 'portfolio', component: Section04PortfolioComponent },
     { path: 'contact', component: Section05ContactComponent },
     { path: 'footer', component: FooterComponent },
+    { path: 'impress', component: ImpressComponent }, 
 
 ];
