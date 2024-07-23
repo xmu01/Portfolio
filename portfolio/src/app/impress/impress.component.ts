@@ -3,11 +3,12 @@ import { MyServiceService } from '.././my-service.service'; // Wichtig für Übe
 import { TranslateModule } from '@ngx-translate/core'; // das auch zum Übersetzen
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-impress',
   standalone: true,
-  imports: [TranslateModule, HeaderComponent, FooterComponent ],
+  imports: [TranslateModule, HeaderComponent, FooterComponent, RouterLink ],
   templateUrl: './impress.component.html',
   styleUrl: './impress.component.scss'
 })
