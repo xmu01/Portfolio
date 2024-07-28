@@ -5,7 +5,7 @@ import { MyServiceService } from './my-service.service'; // Wichtig für Überse
 
 
 import { CommonModule } from '@angular/common';
-//import { RouterOutlet } from '@angular/router'; // Ich glaube,lösche ich am Ende, damit ich die Components nicht 2 mal einbinde. Ich habe schon <app-router> in app.component.html gelöscht. Falls ich es wieder einfügen möchte, in imports auch gucken..
+import { RouterOutlet } from '@angular/router'; // Ich glaube,lösche ich am Ende, damit ich die Components nicht 2 mal einbinde. Ich habe schon <app-router> in app.component.html gelöscht. Falls ich es wieder einfügen möchte, in imports auch gucken..
 
 import { HeaderComponent } from './header/header.component';
 import { Section01HeroComponent } from './section01-hero/section01-hero.component';
@@ -21,7 +21,7 @@ import { ImpressComponent } from './impress/impress.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,
+  imports: [CommonModule, RouterOutlet,
   HeaderComponent,Section01HeroComponent, Section02AboutComponent, Section03SkillsComponent, Section04PortfolioComponent, Section05ContactComponent, FooterComponent, ImpressComponent, ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -32,7 +32,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 export const appConfig: ApplicationConfig = {
-providers: [provideRouter(routes),provideAnimations(),provideHttpClient(),importProvidersFrom(HttpClientModule), importProvidersFrom([TranslateModule.forRoot(provideTranslation())
+providers: [provideRouter(routes),
+            provideAnimations(),
+            provideHttpClient(),
+             
+            importProvidersFrom(HttpClientModule, [TranslateModule.forRoot(provideTranslation()),
 ]),],
 
 };
