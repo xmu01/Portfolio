@@ -48,7 +48,7 @@ export class MyServiceService {
       CONTACT_05_POLICY: `I've read the privacy policy and agree to the processing of my data as outlined.`,
       CONTACT_05_SEND: `Send Mail`,
 
-      IMPRESS: `Impress`,
+      IMPRINT: `Imprint`,
     });
 
     this.translate.setTranslation('de', {
@@ -89,7 +89,7 @@ export class MyServiceService {
       CONTACT_05_POLICY: `Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu.`,
       CONTACT_05_SEND: `E-Mail senden`,
 
-      IMPRESS: `Impressum`,
+      IMPRINT: `Impressum`,
     });
 
     // Standard- und Initialsprache setzen

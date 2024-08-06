@@ -7,11 +7,13 @@ import { Section04PortfolioComponent } from './section04-portfolio/section04-por
 import { Section05ContactComponent } from './section05-contact/section05-contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImpressComponent } from './impress/impress.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 
 export const routes: Routes = [
     { path: 'header', component: HeaderComponent },
+    { path: '', component: HomePageComponent },
     { path: 'hero', component: Section01HeroComponent },
     { path: 'about', component: Section02AboutComponent },
     { path: 'skills', component: Section03SkillsComponent },
