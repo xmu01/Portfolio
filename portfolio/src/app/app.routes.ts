@@ -12,14 +12,10 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 export const routes: Routes = [
-    { path: 'header', component: HeaderComponent },
+    
     { path: '', component: HomePageComponent },
-    { path: 'hero', component: Section01HeroComponent },
-    { path: 'about', component: Section02AboutComponent },
-    { path: 'skills', component: Section03SkillsComponent },
-    { path: 'portfolio', component: Section04PortfolioComponent },
-    { path: 'contact', component: Section05ContactComponent },
-    { path: 'footer', component: FooterComponent },
+    
+    
     { path: 'impress', component: ImpressComponent }, 
 
 ];

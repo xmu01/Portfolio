@@ -16,13 +16,15 @@ import { Section05ContactComponent } from './section05-contact/section05-contact
 import { FooterComponent } from './footer/footer.component';
 import { ImpressComponent } from './impress/impress.component';
 
+import { HomePageComponent } from './home-page/home-page.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,
-  HeaderComponent,Section01HeroComponent, Section02AboutComponent, Section03SkillsComponent, Section04PortfolioComponent, Section05ContactComponent, FooterComponent, ImpressComponent, ],
+  HeaderComponent,Section01HeroComponent, Section02AboutComponent, Section03SkillsComponent, Section04PortfolioComponent, Section05ContactComponent, FooterComponent, ImpressComponent, HomePageComponent, ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
