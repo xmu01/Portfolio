@@ -1,0 +1,38 @@
+{
+      "ABOUT": "About me",
+      "SKILLS": "Skills",
+      "PORTFOLIO": "Portfolio",
+      "SWITCH_LANGUAGE": "Deutsch",
+
+      "I_AM": "I am",
+      "FRONTEND_DEVELOPER": "FRONTEND DEVELOPER",
+      "LETS_TALK": "Let's talk!",
+      "SCROLL_DOWN": "Scroll down",
+
+      "ABOUT_02": "About me",
+      "ABOUT_02_01": "Hello, I'm Muhammed, a Frontend Developer based in Cologne. I have a background in Web Development with a focus on HTML, CSS, JavaScript, TypeScript, and Angular.",
+      "ABOUT_02_02": "My passion lies in programming, which is why I specialize in Web Development. My aim is to create user-friendly websites that seamlessly blend functionality and aesthetics.",
+      "ABOUT_02_03": "Think of me as the missing puzzle piece for your team. With my passion for Software Development and the ability to solve problems efficiently, I am ready to contribute to your projects and help you achieve your goals.",
+    
+      "SKILLS_03_01": "Skills",
+      "SKILLS_03_02": "I have gained experience in building projects with various front end technologies and concepts.",
+      "SKILLS_03_03": "Get in touch",
+
+      "PORTFOLIO_04_01": "This page is a sample of my work! Scroll down to view other projects I have developed.",
+      "PORTFOLIO_04_02": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "PORTFOLIO_04_03": "Task manager inspired by the Kanban system. Create and organize tasks using drag and drop functions, assign users and categories.",
+
+      "CONTACT_05_01": "Contact",
+      "CONTACT_05_02": "Got a problem to solve?",
+      "CONTACT_05_03_01": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "CONTACT_05_03_02": "Need a Frontend developer? ",
+      "CONTACT_05_03_03": "Contact me!",
+
+      "CONTACT_05_NAME": "Your name",
+      "CONTACT_05_EMAIL": "Your email",
+      "CONTACT_05_MSG": "Your message",
+      "CONTACT_05_POLICY": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "CONTACT_05_SEND": "Send Mail",
+
+      "IMPRINT": "Imprint"
+}

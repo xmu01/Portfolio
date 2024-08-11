@@ -74,7 +74,7 @@ export class MyServiceService {
 
       PORTFOLIO_04_01: `Diese Seite ist ein Beispiel meiner Arbeit! Scrollen Sie nach unten, um weitere Projekte zu sehen, die ich entwickelt habe.`,
       PORTFOLIO_04_02: `Ein Sprung-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.`,
-      PORTFOLIO_04_03: `Ein Tasknmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.`,
+      PORTFOLIO_04_03: `Ein Taskmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.`,
     
       CONTACT_05_01: `Kontakt`,
       CONTACT_05_02: `Sie haben ein Problem zu lösen?`,
