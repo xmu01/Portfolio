@@ -81,21 +81,25 @@ p {
 
 .right-div-02 {
     z-index: 0;
+    position: relative;
+    /*bottom: 0; */
+    height: 500px;
     
     .bg-pfp {
-        margin: 0 auto;
-        max-width: 1440px;
+       /* margin: 0 auto;
+        max-width: 1440px;*/
 
         position: absolute;
         right: 0;
-        display: flex;
-        flex-flow: row-reverse;
-        width: max-content;
+        bottom: 150px;
+        /*display: flex;
+        flex-flow: row-reverse;*/
+        /*width: max-content;*/
         /*justify-content: flex-end;*/
         
         .bg-pfp-img {
-            margin-top: -33vh;
-            margin-right: 12vh;
+            /*margin-top: -33vh;
+            margin-right: 12vh;*/
             width: 500px;
             height: 500px;
             z-index: 1;
@@ -105,6 +109,10 @@ p {
     .vector {
         z-index: 2;
         overflow-y: hidden;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
         .vector-img {
             position: relative; /*Merksatz: Du brauchst position:relative; oder absolute für z-index*/
             object-fit:fill;
@@ -132,8 +140,8 @@ p {
         .bg-pfp {
 
             .bg-pfp-img {
-                margin-top: 24vh;
-                margin-right: 0vh;
+                /*margin-top: 24vh;
+                margin-right: 0vh;*/
                 display: unset;
                 width: 320px;
                 height: 320px;
@@ -151,11 +159,20 @@ p {
 
 @media (max-width: 600px) {
 
+    .left-div-02 {
+        margin-left: 8vh;
+        margin-right: 8vh;
+        .description {
+            width: 100%;
+            
+        }
+    }
+
     .right-div-02 {
         .bg-pfp {
             .bg-pfp-img {
-                margin-top: 24vh; 
-                margin-right: 0vh;
+                /*margin-top: 24vh; 
+                margin-right: 0vh;*/
                 display: unset;
                 width: 320px;
                 height: 320px;
