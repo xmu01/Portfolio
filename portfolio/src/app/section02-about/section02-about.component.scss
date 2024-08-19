@@ -108,13 +108,33 @@ p {
 
     .vector {
         z-index: 2;
-        overflow-y: hidden;
-        position: absolute;
+        
+        position: relative; /*vorher absolute*/
         right: 0;
         left: 0;
         bottom: 0;
 
 
+        .bg-pfp {
+            /* margin: 0 auto;
+             max-width: 1440px;*/
+     
+             position: absolute;
+             right: 0;
+             bottom: 150px;
+             /*display: flex;
+             flex-flow: row-reverse;*/
+             /*width: max-content;*/
+             /*justify-content: flex-end;*/
+             
+             .bg-pfp-img {
+                 /*margin-top: -33vh;
+                 margin-right: 12vh;*/
+                 width: 500px;
+                 height: 500px;
+                 z-index: 1;
+             }
+         }
         
         .vector-img {
             position: relative; /*Merksatz: Du brauchst position:relative; oder absolute für z-index*/
@@ -152,7 +172,16 @@ p {
         }
 
         .vector {
+            .bg-pfp {
 
+                .bg-pfp-img {
+                    /*margin-top: 24vh;
+                    margin-right: 0vh;*/
+                    display: unset;
+                    width: 320px;
+                    height: 320px;
+                }
+            }
             .vector-img {
                 margin-top: 40vh;
             }
@@ -172,6 +201,8 @@ p {
     }
 
     .right-div-02 {
+
+        .vector {
         .bg-pfp {
             bottom: 85px;
             .bg-pfp-img {
@@ -180,6 +211,7 @@ p {
                 display: unset;
                 width: 320px;
                 height: 320px;
+                }
             }
         }
     }
