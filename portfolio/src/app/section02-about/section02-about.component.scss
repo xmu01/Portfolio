@@ -113,6 +113,9 @@ p {
         right: 0;
         left: 0;
         bottom: 0;
+
+
+        
         .vector-img {
             position: relative; /*Merksatz: Du brauchst position:relative; oder absolute für z-index*/
             object-fit:fill;
@@ -170,6 +173,7 @@ p {
 
     .right-div-02 {
         .bg-pfp {
+            bottom: 85px;
             .bg-pfp-img {
                 /*margin-top: 24vh; 
                 margin-right: 0vh;*/
