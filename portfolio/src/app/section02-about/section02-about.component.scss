@@ -83,7 +83,7 @@ p {
     z-index: 0;
     position: relative;
     /*bottom: 0; */
-    height: 500px;
+    /*height: 500px; standard ist wohl 300px*/
     
     .bg-pfp {
        /* margin: 0 auto;
@@ -183,7 +183,7 @@ p {
                 }
             }
             .vector-img {
-                margin-top: 40vh;
+                margin-top: 150px; /*voher waren 40vh*/
             }
         }
     }
