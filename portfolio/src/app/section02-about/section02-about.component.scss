@@ -140,7 +140,7 @@ p {
             position: relative; /*Merksatz: Du brauchst position:relative; oder absolute für z-index*/
             object-fit:fill;
             width: 100%;
-            height: 30vh; /*vorher 30*/
+            height: 300px; /*vorher 30vh, dann besser 300px, kein vh, da es nicht responsive ist*/
             z-index: 2;
         }
     }
@@ -204,13 +204,14 @@ p {
 
         .vector {
         .bg-pfp {
-            bottom: 85px;
+            bottom: 105px;
             .bg-pfp-img {
                 /*margin-top: 24vh; 
                 margin-right: 0vh;*/
                 display: unset;
                 width: 320px;
                 height: 320px;
+                
                 }
             }
         }
