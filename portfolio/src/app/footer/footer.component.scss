@@ -1,9 +1,9 @@
-body {
+.footer-outside {
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    height: 40vh;
-    overflow-x: hidden;;
+    height: max-content;
+    overflow: hidden;
 }
 
 * {

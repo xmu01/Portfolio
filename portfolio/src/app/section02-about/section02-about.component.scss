@@ -1,8 +1,8 @@
-body {
+#about {
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    height: 130vh;
+    height: max-content;
     
 }
 
@@ -10,6 +10,8 @@ body {
     box-sizing: border-box;
     
 }
+
+
 
 p {
     margin: 0 auto; /* Das für p war nur ein Test. Kannst du später entfernen.*/
@@ -154,6 +156,12 @@ p {
 
 
     .left-div-02 {
+        margin-left: 8vh;
+        margin-right: 8vh;
+        .description {
+            width: 100%;
+            margin-bottom: 50px;
+        }
         h1 {
             font-size: 30px;
         }
