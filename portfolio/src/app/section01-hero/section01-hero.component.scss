@@ -124,3 +124,25 @@
         margin-top: -210px;
     }
 }
+
+/* Medienabfrage für Ultrawide-Bildschirme */
+@media (min-width: 1440px) {
+
+    .bottom-left .hero-icons {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        position: relative;
+        left: 0;
+        
+    }
+
+    .bottom-right {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}

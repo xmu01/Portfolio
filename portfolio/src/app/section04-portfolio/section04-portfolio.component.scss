@@ -390,3 +390,20 @@ p {
         }
     }
 }
+
+/* Medienabfrage für Ultrawide-Bildschirme */
+@media (min-width: 1440px) { 
+
+    .top-04 {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .bottom-04 {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

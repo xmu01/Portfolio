@@ -87,10 +87,11 @@ p {
     /*bottom: 0; */
     /*height: 500px; standard ist wohl 300px*/
     
+    /*
     .bg-pfp {
        /* margin: 0 auto;
         max-width: 1440px;*/
-
+    /*
         position: absolute;
         right: 0;
         bottom: 150px;
@@ -98,15 +99,15 @@ p {
         flex-flow: row-reverse;*/
         /*width: max-content;*/
         /*justify-content: flex-end;*/
-        
+        /*
         .bg-pfp-img {
             /*margin-top: -33vh;
-            margin-right: 12vh;*/
+            margin-right: 12vh;*/ /*
             width: 500px;
             height: 500px;
             z-index: 1;
         }
-    }
+    } */
 
     .vector {
         z-index: 2;
@@ -120,24 +121,22 @@ p {
         .bg-pfp {
             /* margin: 0 auto;
              max-width: 1440px;*/
-             left: 100%;
-             transform: translateX(-50%); /* Zentrales Ausrichten des Elements */     
+     
              position: absolute;
              right: 0;
              bottom: 150px;
-             max-width: 1440px;
              /*display: flex;
              flex-flow: row-reverse;*/
              /*width: max-content;*/
              /*justify-content: flex-end;*/
-             width: 100%; /* Stellt sicher, dass das Element seine Breite nicht überschreitet */
+             
              .bg-pfp-img {
                  /*margin-top: -33vh;
                  margin-right: 12vh;*/
                  width: 500px;
                  height: 500px;
                  z-index: 1;
-                 margin: 0 auto; /* Zentriert das Bild innerhalb des Containers */
+                  margin: 0 auto; /* Zentriert das Bild innerhalb des Containers */
              }
          }
         
@@ -233,6 +232,13 @@ p {
 /* Medienabfrage für Ultrawide-Bildschirme */
 @media (min-width: 1440px) {
     .left-div-02, .right-div-02 .vector .bg-pfp .bg-pfp-img {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .right-div-02 .vector  {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
