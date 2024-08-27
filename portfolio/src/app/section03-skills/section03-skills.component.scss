@@ -209,6 +209,12 @@ p {
 @media (min-width: 1440px) { 
 
 
+    #skills {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .left-div-03 {
         max-width: 1440px;
         margin-left: auto;
@@ -216,9 +222,15 @@ p {
     }
 
     .right-div-03 {
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+      
+
+        .headline-line {
+
+            .line-skills {
+                position: absolute!important; /*NEU und..*/
+                right: 0!important; /*....NEU*/
+            }
+        }
     }
 
 

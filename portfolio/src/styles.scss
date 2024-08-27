@@ -15,7 +15,7 @@
     src: url('./assets/fonts/Poppins-1/Poppins-Bold.ttf');
 }
 html, body { height: unset !important; } // Davor war statt unset, height: 100%;
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #141d2f; }
 
 .mdc-dialog__surface {
     background: gray !important;
