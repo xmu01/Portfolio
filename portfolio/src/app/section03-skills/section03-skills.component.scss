@@ -2,7 +2,8 @@
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    height: 100vh; /*130vh*/
+    min-height: 100vh;
+    /*height: 100vh; /*130vh, neu: min-height statt height, wegen der vh (Viewport-Geschichte, denn so entstehen die Scrollbalken */
     display: flex;
     
     justify-content: center; /*Eventuell die beiden später entfernen*/
@@ -14,6 +15,7 @@
     background-size: cover;
 
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 * {
@@ -186,6 +188,10 @@ p {
 
 @media (max-width: 500px) {
 
+    .right-div-03 {
+        margin-right: 2vh;
+
+    }
     .left-div-03 {
 
         .first-row {

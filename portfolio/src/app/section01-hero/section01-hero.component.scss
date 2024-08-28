@@ -1,12 +1,14 @@
 #hero {
     background-color:  #141d2f;
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
     background-image: url('./../../assets/purpleshadowmerged.png');
     background-repeat: no-repeat;
     /*background-size: contain; /*Bei Mobilansicht einfach media query size ändern in px*/
     background-size: cover;
     background-position: 50% 100%;
+    position: relative;
+    
     
 }
 
@@ -128,7 +130,7 @@
 /* Medienabfrage für Ultrawide-Bildschirme */
 @media (min-width: 1440px) {
 
-    .bottom-left .hero-icons {
+    .bottom-left  {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;

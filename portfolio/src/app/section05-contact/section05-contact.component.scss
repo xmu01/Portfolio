@@ -1,10 +1,13 @@
 #contact {
     color: white;
     background-color:  #141d2f;
-    margin: 0;
-    height: 140vh;
+    margin: 0 auto;
+    /*height: 140vh;Hier auch, min-height, um Scrollbalken zu verhindern, damit alles reinpasst*/
+    min-height: 140vh;
     overflow-x: hidden;
     border-bottom:  6px solid #01b8e2;
+    max-width: 1440px;
+    position: relative; /* Um die blauen Linien zielgerecht dahin zu bewegen, wo ich möchte*/
 }
 
 * {
@@ -22,8 +25,8 @@ p {
         height: 4px;
         color: #01b8e2;
         background-color: #01b8e2;
-        width: 40vh; /*Vorher 400px*/
-        margin-top: 7vh;
+        width: 35vh; /*Vorher 400px*/
+        margin-top: 7vh; /*vorher 7vh*/
         margin-left: 20px; /* Abstand zwischen h1 und Linie */
         position: absolute; /*NEU und..*/
         right: 0; /*....NEU*/
@@ -236,6 +239,7 @@ p {
     .top-05 {
         .contact-line {
             width: 20vh;
+            margin-top: 7vh;
         }
     }
 
@@ -261,7 +265,7 @@ p {
     .top-05 {
         
         .contact-line {
-            width: 10vh;
+            width: 5vh;
         }
     }
 
@@ -300,6 +304,12 @@ p {
         margin-right: auto;
     }
 
+    .top-05 {
+        .contact-line {
+            margin-top: 3vh;
+        }
+    }
+
     .right-left-05 {
         max-width: 1440px;
         margin-left: auto;
@@ -311,6 +321,12 @@ p {
         }
         .left-div-05 {
             width: 100%;
+
+            .problem-div-05 {
+                .problem-line {
+                    margin-top: 1vh;
+                }
+            }
         }
     }
 }
