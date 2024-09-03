@@ -2,7 +2,7 @@
     color: white;
     background-color:  #141d2f;
     margin: 0;
-    min-height: 70vh;
+    min-height: fit-content; /*70vh*/
     /*height: 100vh; /*130vh, neu: min-height statt height, wegen der vh (Viewport-Geschichte, denn so entstehen die Scrollbalken */
     display: flex;
     
@@ -199,7 +199,8 @@ p {
     #skills {
         display: flex;
         flex-direction: column-reverse;
-        
+        margin-top: -120px; /*Um Skills zu nähern an den Vector*/
+        margin-bottom: 60px;
     }
 
     .right-div-03 {

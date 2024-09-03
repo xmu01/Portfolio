@@ -77,7 +77,7 @@ p {
 
     .right-div-05 {
         width: 50%;
-        padding-right: 8vh; /*Achtung! Gucken ob ich das so behalte..*/
+        padding-right: 0vh; /* 8vh Achtung! Gucken ob ich das so behalte..*/
 
         background-image: url('./../../assets/purple05.png');
         background-repeat: no-repeat;
@@ -263,6 +263,7 @@ p {
             max-width: 1440px;
             margin-left: 8vh;
             margin-right: 8vh;
+            padding-right: 8vh;
         }
     }
 
