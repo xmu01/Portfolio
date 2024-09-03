@@ -3,14 +3,16 @@
     background-color:  #141d2f;
     margin: 0 auto;
     /*height: 100vh; Auch hier wieder, um die Scrollbalken loszuwerden*/
-    min-height: 100vh;
+    min-height: fit-content; /*statt 100vh*/
     background-image: url('./../../assets/blueshadow.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     position: relative; /*Übergeordnete Container, habe ich gebraucht damit ich Elemente innerhalb des Containers dahin bewegen kann wie ich will*/
     max-width: 1440px;
+
+    scroll-margin-top: 140px; /*Funktioniert nur in Containern, wo es kein overflow:hidden; gibt!*/
 }
 
 * {
@@ -41,7 +43,7 @@ p {
         }
 
         h1 {
-            font-size: 70px;
+            font-size: 64px;
             margin-left: 8vh;
             max-width: 1440px;
         }
@@ -389,6 +391,14 @@ p {
                 .hide-breaks {
                     display: none;
                 }
+            }
+        }
+    }
+
+    .top-04 {
+        .headline {
+            h1 {
+                font-size: 32px;
             }
         }
     }

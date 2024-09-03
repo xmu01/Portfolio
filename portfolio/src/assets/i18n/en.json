@@ -31,7 +31,9 @@
       "CONTACT_05_NAME": "Your name",
       "CONTACT_05_EMAIL": "Your email",
       "CONTACT_05_MSG": "Your message",
-      "CONTACT_05_POLICY": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "CONTACT_05_POLICY_01": "I've read the ",
+      "CONTACT_05_POLICY_02": "privacy policy",
+      "CONTACT_05_POLICY_03": " and agree to the processing of my data as outlined.",
       "CONTACT_05_SEND": "Send Mail",
 
       "IMPRINT": "Imprint"

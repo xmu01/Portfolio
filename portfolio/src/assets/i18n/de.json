@@ -31,7 +31,9 @@
     "CONTACT_05_NAME": "Ihr Name",
     "CONTACT_05_EMAIL": "Ihre E-Mail Adresse",
     "CONTACT_05_MSG": "Ihre Nachricht",
-    "CONTACT_05_POLICY": "Ich habe die Datenschutzrichtlinie gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu.",
+    "CONTACT_05_POLICY_01": "Ich habe die ",
+    "CONTACT_05_POLICY_02": "Datenschutzrichtlinien",
+    "CONTACT_05_POLICY_03": " gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu.",
     "CONTACT_05_SEND": "E-Mail senden",
 
     "IMPRINT": "Impressum"

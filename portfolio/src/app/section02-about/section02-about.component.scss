@@ -3,7 +3,7 @@
     background-color:  #141d2f;
     margin: 0;
     height: max-content;
-    
+    scroll-margin-top: 50px; /*Um die Ziel-Position beim Scrollen zu verändern*/
 }
 
 * {
@@ -124,7 +124,7 @@ p {
      
              position: absolute;
              right: 0;
-             bottom: 150px;
+             bottom: 150px; /*Ursprünglich 150px*/
              /*display: flex;
              flex-flow: row-reverse;*/
              /*width: max-content;*/
@@ -165,7 +165,7 @@ p {
             margin-bottom: 50px;
         }
         h1 {
-            font-size: 30px;
+            font-size: 32px;
         }
     }
 

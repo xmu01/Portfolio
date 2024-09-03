@@ -55,7 +55,7 @@ openDialog() {
   <a href="#about">{{ 'ABOUT' | translate }}</a> <br> <br><br>
   <a href="#skills">{{ 'SKILLS' | translate }}</a> <br> <br><br>
   <a href="#portfolio">{{ 'PORTFOLIO' | translate }}</a> <br> <br><br>
-  <a href="#">{{ 'SWITCH_LANGUAGE' | translate }}</a> <br> <br><br>
+  <a (click)="switchLanguage()">{{ 'SWITCH_LANGUAGE' | translate }}</a> <br> <br><br>
   </nav>`,
   styles: `
   
@@ -96,6 +96,16 @@ openDialog() {
   standalone: true,
   imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose, MatButtonModule, TranslateModule],
 })
-export class DialogElementsExampleDialog {}
+export class DialogElementsExampleDialog {
+
+  lang: string = 'eng'; // Sprache
+
+ 
+  switchLanguage() {
+    this.translationService.switchLanguage();
+  } 
+
+  constructor(public dialog: MatDialog, public translationService: MyServiceService) { }
+}
 
 

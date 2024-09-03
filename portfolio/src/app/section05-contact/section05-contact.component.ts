@@ -4,12 +4,13 @@ import { TranslateModule } from '@ngx-translate/core'; // das auch zum Übersetz
 import { FormsModule, NgForm } from '@angular/forms'; // Für die Form-Validation
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-section05-contact',
   standalone: true,
-  imports: [TranslateModule, FormsModule, CommonModule],
+  imports: [TranslateModule, FormsModule, CommonModule, RouterLink],
   templateUrl: './section05-contact.component.html',
   styleUrl: './section05-contact.component.scss'
 })
@@ -44,7 +45,8 @@ http = inject(HttpClient);
     },
   };
 
-  onSubmit(contactForm: NgForm) {
+  // Originale Submit-Form
+  /*onSubmit(contactForm: NgForm) {
     if (contactForm.valid && !this.mailTest) {
       console.log(this.contactData);
       // Hier könnte ein Service aufgerufen werden, um die Daten zu senden
@@ -62,8 +64,37 @@ http = inject(HttpClient);
   } else if ( contactForm.valid  && this.mailTest) {
 
     contactForm.resetForm();
+    console.info('send post complete');
   }
     
+  } */
+
+  //Neue Submit-Form
+
+  onSubmit(contactForm: NgForm) {
+    if (contactForm.invalid) {
+      // Alle Form-Controls als 'touched' markieren, um die Fehlermeldungen zu erzwingen
+      Object.keys(contactForm.controls).forEach(field => {
+        const control = contactForm.controls[field];
+        control.markAsTouched({ onlySelf: true });
+      });
+    } else if (contactForm.valid && !this.mailTest) {
+      console.log(this.contactData);
+      // Hier könnte ein Service aufgerufen werden, um die Daten zu senden
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            contactForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (contactForm.valid && this.mailTest) {
+      contactForm.resetForm();
+      console.info('send post complete');
+    }
   }
 
 }
