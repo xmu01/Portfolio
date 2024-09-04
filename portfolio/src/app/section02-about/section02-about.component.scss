@@ -230,6 +230,13 @@ p {
 }        
 
 
+@media (max-width: 413px) {
+    .left-div-02 {
+        margin-left: 3vh;
+        margin-right: 3vh;
+    }
+}
+
 /* Medienabfrage für Ultrawide-Bildschirme */
 @media (min-width: 1440px) {
     .left-div-02, .right-div-02 .vector .bg-pfp .bg-pfp-img {

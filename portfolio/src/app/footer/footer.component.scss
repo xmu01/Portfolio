@@ -105,3 +105,29 @@ footer {
         }
     }
 }
+
+@media (max-width: 360px) {
+
+    footer {
+
+        .img-footer {
+
+            img {
+                margin-left: 1vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 321px) {
+
+    footer {
+
+        .img-footer {
+
+            img {
+                margin-left: 0vh;
+            }
+        }
+    }
+}

@@ -126,6 +126,15 @@
     }
 }
 
+@media (max-width:360px) {
+    .bottom-left {
+        .hero-blueline {
+            width: 30px;
+        }
+
+    }
+}
+
 /* Medienabfrage für Ultrawide-Bildschirme */
 @media (min-width: 1440px) {
 

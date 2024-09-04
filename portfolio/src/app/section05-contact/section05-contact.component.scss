@@ -299,11 +299,44 @@ p {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 413px) {
 
     .top-05 {
         .contact-line {
             width: 5vh;
+        }
+    }
+
+    .right-left-05 {
+        
+        
+        .left-div-05 {
+            .problem-div-05 {
+
+                .problem-line {
+                    width: 2vh; /*Vorher 400px*/
+                    margin-top: 2vh;
+                    margin-right: 0; /* Abstand zwischen h1 und Linie */
+                }
+
+                h2 {
+                    margin-left: 3vh;
+                    max-width: 1440px;
+                }
+            }
+            .p-tag {
+                p {
+                    max-width: 1440px;
+                    margin-left: 3vh;
+                    padding-right: 0vh;
+                }
+            }
+        }
+
+        .right-div-05 {
+            margin-left: 3vh;
+            margin-right: 0;
+            padding-right: 0vh;
         }
     }
 
