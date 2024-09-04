@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Poppins-Regular';
+    
 }
 
 /* Poppins nomal font */
@@ -33,3 +34,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 html {
     scroll-behavior: smooth; 
 }
+
+
+/*Outdated
+/* width */ 
+::-webkit-scrollbar {
+    width: 13px;
+    
+  }
+  
+  /* Track */ 
+  ::-webkit-scrollbar-track {
+    background: #2A3647;;
+  }
+  
+  /* Handle */ 
+  ::-webkit-scrollbar-thumb {
+    background: #4b47ff;
+    border-radius: 16px;
+  }
+  
+  /* Handle on hover */ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #53bfe9;
+  } 

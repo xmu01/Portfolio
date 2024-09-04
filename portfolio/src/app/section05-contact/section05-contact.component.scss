@@ -2,8 +2,8 @@
     color: white;
     background-color:  #141d2f;
     margin: 0 auto;
-    /*height: 140vh;Hier auch, min-height, um Scrollbalken zu verhindern, damit alles reinpasst*/
-    min-height: fit-content; /*statt 100vh*/
+    height: fit-content; /*Hier auch, min-height, um Scrollbalken zu verhindern, damit alles reinpasst*/
+    min-height: 100vh; /*statt 100vh*/
     /*overflow-x: hidden; wegen scroll-margin-top*/
     scroll-margin-top: 100px;
     border-bottom:  6px solid #01b8e2;

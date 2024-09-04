@@ -2,8 +2,8 @@
     color: white;
     background-color:  #141d2f;
     margin: 0 auto;
-    /*height: 100vh; Auch hier wieder, um die Scrollbalken loszuwerden*/
-    min-height: fit-content; /*statt 100vh*/
+    height: fit-content; /*Auch hier wieder, um die Scrollbalken loszuwerden*/
+    min-height: 100vh; /*statt 100vh*/
     background-image: url('./../../assets/blueshadow.png');
     background-repeat: no-repeat;
     background-size: contain;
