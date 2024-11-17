@@ -1,4 +1,4 @@
-<?php
+<?
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.
@@ -9,8 +9,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
         case("POST"): //Send the email;
             header("Access-Control-Allow-Origin: *");
             // Payload is not send to $_POST Variable,
-            // is send to php:input as a text
-            $json = file_get_contents('php://input');
+            // is send to :input as a text
+            $json = file_get_contents('://input');
             //parse the Payload from text format to Object
             $params = json_decode($json);
     

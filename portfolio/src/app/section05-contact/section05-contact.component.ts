@@ -35,7 +35,7 @@ http = inject(HttpClient);
   mailTest = true;
 
   post = {
-    endPoint: 'https://muhammed-ahmed-yazea.developerakademie.net/angular-projects/portfolio/sendMail.php',
+    endPoint: 'https://muhammed-ahmed-yazea.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
